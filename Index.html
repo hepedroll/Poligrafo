@@ -1,0 +1,45 @@
+<!DOCTYPE html> 
+<html lang="pt-br"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial
+scale=1.0"> 
+    <title>Detector de Mentiras</title> 
+    <link rel="stylesheet" href="Poligrafo.css"> 
+</head> 
+<body> 
+ 
+    <div class="jogo"> 
+ 
+        <h1>Poligrafo</h1> 
+        <p>Por favor, responda às perguntas da investigação!</p> 
+ 
+        <div class="cenario"> 
+ 
+            <div class="balao" id="pergunta"> 
+                Podemos começar o interrogatório? 
+            </div> 
+ 
+        </div> 
+ 
+        <h3 id="numero">Pergunta 1 de 10</h3> 
+ 
+        <select id="resposta"> 
+            <option value="">Selecione sua resposta</option> 
+            <option value="sim">Sim</option> 
+            <option value="nao">Não</option> 
+        </select> 
+ 
+        <button onclick="responder()">Responder</button> 
+ 
+        <h2 id="resultado"></h2> 
+ 
+        <button id="reiniciar" onclick="reiniciarJogo()"> 
+            Reiniciar 
+        </button> 
+ 
+    </div> 
+ 
+    <script src="Poligrafo.js"></script> 
+</body> 
+</html>
